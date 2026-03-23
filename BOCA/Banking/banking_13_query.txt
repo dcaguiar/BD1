@@ -1,0 +1,4 @@
+t1 =  sigma customer.customer_name = depositor.customer_name (customer cross join depositor)
+t2 = sigma depositor.account_number = account.account_number (t1 cross join account)
+t3 = sigma branch_name = 'Perryridge' (t2)
+pi customer.customer_name, customer.customer_city (t3)

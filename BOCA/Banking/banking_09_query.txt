@@ -1,0 +1,1 @@
+pi customer_name (sigma customer_street ILIKE '%y%' or customer_name LIKE '%y' (customer))

@@ -1,0 +1,1 @@
+pi branch_name (sigma branch_city ILIKE '%i%' or branch_name LIKE '%n' (branch))
