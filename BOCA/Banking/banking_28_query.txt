@@ -1,0 +1,3 @@
+clients = pi customer_name, branch_name(loan ⨝ borrower)
+pi a.customer_name(
+sigma a.customer_name = b.customer_name and a.branch_name ≠ b.branch_name (rho a (clients) x rho b (clients)))

@@ -1,0 +1,2 @@
+northtown = pi balance -> balance_b sigma branch_name = 'North Town'(account)
+pi account_number (sigma balance_b > balance (account x northtown))

@@ -1,0 +1,2 @@
+max = gamma max(balance) -> max (account)
+pi account_number sigma balance = max (account x max)

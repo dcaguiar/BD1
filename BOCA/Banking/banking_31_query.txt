@@ -1,0 +1,3 @@
+sums = gamma branch_name; sum(balance) -> sum (account)
+total_average = gamma avg(sum) -> average (sums)
+pi branch_name sigma sum > average (total_average ⨯ sums)

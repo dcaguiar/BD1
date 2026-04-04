@@ -1,0 +1,2 @@
+brook = pi assets -> assets_b sigma branch_city = 'Brooklyn'(branch)
+pi branch_name (sigma assets_b < assets (branch x brook))

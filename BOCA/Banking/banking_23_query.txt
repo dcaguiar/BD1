@@ -1,0 +1,2 @@
+branches = pi branch_name -> branch_name_b (account ⨝ sigma customer_name = 'Hayes'(depositor))
+pi customer_name sigma a.branch_name = branch_name_b and customer_name ≠ 'Hayes' (rho a (depositor ⨝ account) x branches)

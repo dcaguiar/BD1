@@ -1,0 +1,7 @@
+loans_branch = sigma branch_name = 'Perryridge' (loan)
+loans_clients = loans_branch natural join borrower natural join customer
+
+accounts_branch = sigma branch_name = 'Perryridge' (account)
+accounts_clients = accounts_branch natural join depositor natural join customer
+
+pi customer_name, customer_city (accounts_clients natural join loans_clients)

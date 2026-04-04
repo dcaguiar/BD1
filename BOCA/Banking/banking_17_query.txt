@@ -1,0 +1,3 @@
+smith = sigma customer_name = 'Smith'(customer)
+
+pi branch_name, branch_city (smith ⨝ borrower ⨝ loan ⨝ branch)

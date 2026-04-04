@@ -1,0 +1,1 @@
+pi branch_name, avg sigma avg > 1200 gamma branch_name; avg(balance) -> avg (account)

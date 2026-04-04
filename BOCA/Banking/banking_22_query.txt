@@ -1,0 +1,1 @@
+pi a.customer_name sigma a.customer_street = c.customer_street and c.customer_city ≠ a.customer_city (rho a customer x rho c customer)

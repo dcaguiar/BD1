@@ -1,0 +1,2 @@
+downtown = pi amount -> amount_b sigma branch_name = 'Downtown' (loan)
+pi loan_number sigma amount ≤ amount_b (loan x downtown)

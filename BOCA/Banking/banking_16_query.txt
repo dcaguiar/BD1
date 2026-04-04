@@ -1,0 +1,3 @@
+hayes = sigma customer_name = 'Hayes'(customer)
+
+pi branch_name, branch_city (hayes ⨝ depositor ⨝ account ⨝ branch)

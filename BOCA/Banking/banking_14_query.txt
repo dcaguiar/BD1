@@ -1,0 +1,2 @@
+emprestimos = sigma branch_name = 'Perryridge' (loan)
+pi customer_name, customer_city(emprestimos natural join borrower natural join customer)
