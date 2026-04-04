@@ -1,0 +1,3 @@
+podium = pi constructorId sigma positionOrder < 4 (results)
+losers = pi constructorId(constructors) - podium
+pi name(losers ⨝ constructors)

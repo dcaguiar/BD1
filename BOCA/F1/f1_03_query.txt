@@ -1,0 +1,2 @@
+circ_ids = pi circuitId (circuits) - pi circuitId (races)
+pi name(circ_ids ⨝ circuits)

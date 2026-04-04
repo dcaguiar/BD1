@@ -1,0 +1,2 @@
+pilots = pi  driverId (drivers) - pi driverId (results)
+pi CONCAT(forename, ' ', surname) -> names(pilots ⨝ drivers)

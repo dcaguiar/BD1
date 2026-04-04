@@ -1,0 +1,6 @@
+R = pi circuitId, raceId(races)
+C = gamma circuitId; COUNT(raceId) -> RacCirc(R)
+P = pi driverId, raceId (results)
+J = gamma driverId, circuitId; COUNT(raceId) -> RacDriv (P ⨝ R)
+F = pi driverId, circuitId sigma RacDriv = RacCirc (J ⨝ C)
+pi CONCAT(forename, ' ', surname) -> Piloto, name -> Circuito (F ⨝ drivers ⨝ circuits)

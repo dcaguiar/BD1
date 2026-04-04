@@ -1,0 +1,2 @@
+podium = sigma positionOrder ≤ 3 (results)
+pi nationality (podium ⨝ drivers) - pi nationality (constructors)

@@ -1,0 +1,2 @@
+gp_ids = pi gpId (gps) - pi gpId (races)
+pi name(gp_ids ⨝ gps)

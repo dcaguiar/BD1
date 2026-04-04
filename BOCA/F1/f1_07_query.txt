@@ -1,0 +1,6 @@
+podium = sigma positionOrder = 1 (results)
+french_teams = sigma nationality = 'French' (constructors)
+pilotos = pi driverId, CONCAT(forename, ' ', surname) -> Piloto (drivers)
+circuitos = pi raceId, name -> Circuito, year -> Ano(races ⨝ circuits)
+french_podium = (french_teams ⟕ podium ⟕ circuitos ⟕ pilotos)
+pi name -> Equipe, Piloto, Circuito, Ano (french_podium)
