@@ -1,0 +1,3 @@
+last = gamma raceId; max(grid) -> grid (results)
+pilotos = pi driverId, grid, positionOrder sigma positionOrder < 4 (last ⨝ results)
+pi CONCAT(forename, ' ', surname) -> Piloto, grid -> PosLargada, positionOrder -> PosChegada (pilotos ⨝ drivers)

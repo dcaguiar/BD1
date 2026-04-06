@@ -1,0 +1,6 @@
+corridas = τ round sigma year = 2020(races)
+circuitos = pi circuitId, round, lat, lng(corridas ⨝ circuits)
+C = sigma A.round+1 = B.round (rho A (circuitos) ⨯ rho B (circuitos))
+dists = pi abs(A.lat - B.lat) + abs(A.lng - B.lng) -> DIST, B.round(C)
+D = pi DIST (gamma SUM(DIST) -> DIST (dists))
+pi (floor(DIST * 10000 + 0.5)/10000) -> DIST (D)

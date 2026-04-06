@@ -1,0 +1,4 @@
+pilotos = pi driverId, year(date(dob)) -> yob (drivers)
+idades = pi driverId, (year - yob) -> Idade(results ⨝ pilotos ⨝ races)
+imin = gamma MIN(Idade) -> Idade (idades)
+pi CONCAT(forename, ' ', surname) -> Piloto, Idade  (imin ⨝ idades ⨝ drivers)

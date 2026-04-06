@@ -1,0 +1,5 @@
+A = pi raceId, constructorId sigma points > 0(results)
+corridas = sigma year = 2012(races)
+n = gamma COUNT(*) -> n (corridas)
+eq = gamma constructorId; COUNT(raceId) -> n (corridas ⨝ A)
+pi name -> Equipe(eq ⨝ n ⨝ constructors)

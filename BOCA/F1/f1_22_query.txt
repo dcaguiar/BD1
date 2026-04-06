@@ -1,0 +1,4 @@
+fyear = gamma MIN(year) -> year(races)
+fround = gamma MIN(round) -> round(fyear ⨝ races)
+R = pi name -> GP, circuitId(fround ⨝ races ⨝ gps ⨝ fyear)
+pi GP, country -> Pais(R ⨝ circuits)
