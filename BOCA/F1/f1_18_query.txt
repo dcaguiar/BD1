@@ -1,0 +1,6 @@
+A = pi constructorId, points, raceId (results)
+p_eq_an = gamma year, constructorId; SUM(points) -> pontos (A ⨝ races)
+max_ano = gamma year; MAX(pontos) -> pontos (p_eq_an)
+ano_champ = sigma n = 1 gamma year; COUNT(constructorId) -> n (max_ano ⨝ p_eq_an)
+equipes = sigma Aparicoes > 1 gamma constructorId; COUNT(year) -> Aparicoes (ano_champ ⨝ max_ano ⨝ p_eq_an)
+pi name -> Equipe (equipes ⨝ constructors)

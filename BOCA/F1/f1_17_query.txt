@@ -1,0 +1,7 @@
+A = pi driverId, points, raceId (results)
+B = gamma year, driverId; SUM(points) -> pontos (A ⨝ races)
+maxi = gamma year; MAX(pontos) -> pontos (B)
+anos = sigma qtd = 1 gamma year; COUNT(driverId) -> qtd(maxi ⨝ B)
+C = maxi ⨝ anos
+champions = gamma driverId; COUNT(year) -> aparicoes (C ⨝ B)
+pi CONCAT(forename, ' ', surname) -> Piloto sigma aparicoes > 3 (champions ⨝ drivers)

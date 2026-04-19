@@ -1,0 +1,3 @@
+prix = gamma gpId; COUNT(raceId) -> n (races)
+maxi = gamma MAX(n) -> n (prix)
+pi name -> GP, n -> Ocorrencias (maxi ⨝ prix ⨝ gps)

@@ -1,0 +1,3 @@
+anos = gamma year; COUNT(raceId) -> n (races)
+maxi = gamma MAX(n) -> n (anos)
+pi year -> Temporada, n -> Corridas (maxi ⨝ anos)

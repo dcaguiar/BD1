@@ -1,0 +1,4 @@
+A = pi driverId, raceId(results)
+B = gamma driverId; COUNT(raceId) -> Aparicoes (A)
+maxi = gamma MAX(Aparicoes) -> Aparicoes (B)
+pi CONCAT(forename, ' ', surname) -> Piloto, Aparicoes (maxi ⨝ B ⨝ drivers)

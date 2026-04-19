@@ -1,0 +1,5 @@
+temps = pi raceId, year(races)
+res = pi constructorId, raceId (results)
+eqs = gamma year; COUNT(constructorId) -> Equipes (pi year, constructorId (res ⨝ temps))
+media = gamma AVG(Equipes) -> MediaEquipes (eqs)
+pi ROUND(MediaEquipes) -> MediaEquipes (media)

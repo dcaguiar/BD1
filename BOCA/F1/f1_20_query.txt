@@ -1,0 +1,7 @@
+A = pi constructorId, driverId, points, raceId (results)
+B = pi raceId, year (races)
+n_year = gamma year; COUNT(raceId) -> corridas (B)
+all_eq = sigma pontos = 0 gamma year, constructorId; SUM(points) -> pontos (A ⨝ B)
+C = pi constructorId, raceId (results)
+n_eq_y = gamma year, constructorId; COUNT(raceId) -> corridas (C ⨝ B)
+pi name -> Equipe, year -> Ano (n_eq_y ⨝ n_year ⨝ all_eq ⨝ constructors)

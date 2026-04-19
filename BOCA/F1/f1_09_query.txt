@@ -1,0 +1,3 @@
+corrida_ano = gamma year; COUNT(raceId) -> races (races) 
+media = gamma AVG(races) -> Media (corrida_ano)
+pi ROUND(Media) -> MediaCorridas (media)

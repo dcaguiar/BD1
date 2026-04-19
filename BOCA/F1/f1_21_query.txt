@@ -1,0 +1,5 @@
+ms = pi driverId sigma forename = 'Michael' and surname = 'Schumacher' (drivers)
+ferrari = pi constructorId sigma name = 'Ferrari' (constructors)
+corridas = pi raceId, constructorId (ms ⨝ results ⨝ ferrari)
+pilotos = pi driverId (corridas ⨝ results) - ms
+pi CONCAT(forename, ' ', surname) -> Piloto (pilotos ⨝ drivers)

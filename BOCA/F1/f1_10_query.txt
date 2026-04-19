@@ -1,0 +1,5 @@
+temps = pi raceId, year(races)
+res = pi driverId, raceId (results)
+pils = gamma year; COUNT(driverId) -> Pilotos (pi year, driverId (res ⨝ temps))
+media = gamma AVG(Pilotos) -> MediaPilotos (pils)
+pi ROUND(MediaPilotos) -> MediaPilotos (media)

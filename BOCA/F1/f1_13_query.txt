@@ -1,0 +1,4 @@
+A = pi driverId, constructorId, raceId (results)
+B = gamma constructorId; COUNT(raceId) -> Aparicoes (A)
+mini = gamma MIN(Aparicoes) -> Aparicoes (B)
+pi name -> Equipe, Aparicoes (mini ⨝ B ⨝ constructors)

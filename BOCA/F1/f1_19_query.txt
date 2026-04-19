@@ -1,0 +1,6 @@
+A = pi driverId, points, raceId (results)
+B = pi year, raceId (races)
+pointers_y = sigma points > 0 (A ⨝ B)
+races_pilots = gamma driverId, year; COUNT(raceId) -> corridas (pointers_y)
+races_year = gamma year; COUNT(raceId) -> corridas (B)
+pi CONCAT(forename, ' ', surname) -> Piloto, year -> Ano (races_year ⨝ races_pilots ⨝ drivers)

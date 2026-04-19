@@ -1,0 +1,3 @@
+circs = gamma circuitId; COUNT(raceId) -> n (races)
+maxi = gamma MAX(n) -> n (circs)
+pi name (maxi ⨝ circs ⨝ circuits)
