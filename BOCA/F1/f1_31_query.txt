@@ -1,0 +1,4 @@
+poles = pi driverId, raceId sigma grid = 1 (results)
+A = gamma driverId; COUNT(raceId) -> Poles (poles)
+max = gamma MAX(Poles) -> Poles (A)
+pi CONCAT(forename, ' ', surname) -> Piloto, Poles (max ⨝ A ⨝ drivers)

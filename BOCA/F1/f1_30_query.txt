@@ -1,0 +1,18 @@
+prost = pi driverId sigma surname = 'Prost' and forename = 'Alain'(drivers)
+senna = pi driverId sigma surname = 'Senna' and forename = 'Ayrton'(drivers)
+mansell = pi driverId sigma surname = 'Mansell' and forename = 'Nigel'(drivers)
+piquet = sigma surname = 'Piquet' and forename = 'Nelson' (drivers)
+
+prost_races = pi driverId, gpId sigma positionOrder = 1 and year = 1986 (prost ⨝ results ⨝ races)
+senna_races = pi driverId, gpId sigma positionOrder = 1 and year = 1986 (senna ⨝ results ⨝ races)
+mansell_races = pi driverId, gpId sigma positionOrder = 1 and year = 1986 (mansell ⨝ results ⨝ races)
+piquet_races = pi driverId, gpId sigma positionOrder = 1 and year = 1986 (piquet ⨝ results ⨝ races)
+
+SE = pi rownum() -> n1, name -> Senna tau name (senna_races ⨝ gps)
+PR = pi rownum() -> n2, name -> Prost tau name (prost_races ⨝ gps)
+MA = pi rownum() -> n3, name -> Mansell tau name (mansell_races ⨝ gps)
+P = pi rownum() -> n4, name -> Piquet tau name (piquet_races ⨝ gps)
+
+A = pi Senna, Prost, rownum() -> n12 (SE ⟗ n1 = n2 PR) 
+B = pi Senna, Prost, Mansell, rownum() -> n123 (A ⟗ n12 = n3 MA) 
+pi Senna, Prost, Mansell, Piquet (B ⟗ n123 = n4 P) 

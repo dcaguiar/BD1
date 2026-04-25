@@ -1,0 +1,4 @@
+monaco = sigma name ILIKE '%monaco%' (gps)
+finals = pi driverId, year sigma status ILIKE '+% Lap%' or status = 'Finished' (monaco ⨝ races ⨝ results ⨝ status)
+A = pi year-> Temporada, Qtde_Pilotos gamma year; Count(driverId)-> Qtde_Pilotos (finals)
+A
