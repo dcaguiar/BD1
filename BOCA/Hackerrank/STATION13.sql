@@ -1,0 +1,23 @@
+WITH menor AS (
+
+    SELECT
+        "CITY" AS "NOME_MENOR",
+        LENGTH("CITY") AS "TAM_MENOR"
+    FROM "STATION"
+    ORDER BY LENGTH("CITY") ASC, "CITY" ASC
+    LIMIT 1
+),
+
+maior AS (
+
+    SELECT
+        "CITY" AS "NOME_MAIOR",
+        LENGTH("CITY") AS "TAM_MAIOR"
+    FROM "STATION"
+    ORDER BY LENGTH("CITY") DESC, "CITY" ASC
+    LIMIT 1
+)
+
+SELECT "NOME_MENOR", "NOME_MAIOR", "TAM_MENOR", "TAM_MAIOR"
+FROM menor
+CROSS JOIN maior;

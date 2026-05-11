@@ -1,0 +1,20 @@
+WITH ends AS (
+SELECT DISTINCT "CITY"
+FROM "STATION"
+WHERE "CITY" ILIKE '%a'
+  OR "CITY" ILIKE '%e'
+  OR "CITY" ILIKE '%i'
+  OR "CITY" ILIKE '%o'
+  OR "CITY" ILIKE '%u'
+),
+begins AS (
+SELECT DISTINCT "CITY"
+FROM "STATION"
+WHERE "CITY" ILIKE 'a%'
+  OR "CITY" ILIKE 'i%'
+  OR "CITY" ILIKE 'e%'
+  OR "CITY" ILIKE 'o%'
+  OR "CITY" ILIKE 'u%'
+)
+SELECT *
+FROM ends NATURAL JOIN begins
